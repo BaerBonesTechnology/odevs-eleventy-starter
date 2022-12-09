@@ -1,9 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200;300&display=swap'); 
+ 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/*Your Custom CSS Goes here*/
 
+/*Your Custom CSS Goes here*/
+    font-family: 'Bebas Neue', cursive;
+
+    font-family: 'Oswald', sans-serif;
+    
+    
 /* Daisy UI default variable overrides */
 :root {
   --rounded-box: 1rem;        /* border-radius for cards and other big elements */
@@ -53,6 +60,7 @@ body pre[class*="language-"] {
 }
 
 
+
 .hide-scroll {
   -ms-overflow-style: none; /*IE and Edge*/
   scrollbar-width: none; /*Firefox*/
@@ -60,4 +68,54 @@ body pre[class*="language-"] {
 
 .hide-scroll::-webkit-scrollbar{
   display: none;
+}
+
+.admin-header-title{
+  @apply text-4xl text-center font-bold text-blueGray-700 font-admin-display tracking-wider mx-4 my-2;
+}
+
+.login-box{
+  @apply bg-blueGray-800 p-12 container mx-auto rounded-lg shadow-lg w-1/3 space-y-6 text-white bg-opacity-60;
+}
+
+.login-form-group{
+  @apply relative flex w-full justify-center;
+  & > span, .login-form-field{
+    @apply whitespace-nowrap block;
+
+    &:not(:first-child):not(:last-child){
+      @apply rounded-none;
+    }
+    &:first-child{
+      @apply rounded-l-full;
+    }
+    &:last-child{
+      @apply rounded-r-full;
+    }
+    &:not(:first-child){
+      @apply -ml-1;
+    }
+  }
+.login-form-field{
+  position: relative;
+  z-index: 1;
+  flex: 1 1 auto;
+  width: 1%;
+  margin-top: 0;
+  margin-bottom: 0;
+  @apply rounded-l-full pl-3;
+}
+& > span {
+  @apply text-center leading-6 text-blueGray-700 bg-white border-solid rounded-r-full;
+  border: 1px;
+  font-size: 14px;
+  padding: 8px 12px;
+  transition: background .3s ease, border .3 ease, color .3s ease;
+}
+&:focus-within{
+  @apply text-blueGray-700 border-none ;
+  & > span{
+    @apply bg-blueGray-400 border-slate-500 text-white;
+  }
+}
 }

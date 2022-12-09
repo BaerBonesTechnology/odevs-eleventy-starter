@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+             <script type="module" src="\static\js\index.js"></script>
+
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200;300;400;500;600;700&display=swap');</style> 
+    <meta charset="UTF-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            {{title}}
+        </title>
+        {% if description %}
+            <meta name="description" content="{{description}}"/>
+        {% endif %}
+        {% block head %}{% endblock %}
+        <link rel="stylesheet" type="text/css" href="/static/css/style.css"/>
+        {% if prism == true %}
+            <link rel="stylesheet" type="text/css" href="/static/css/prism-tomorrow.css">
+        {% endif %}
+    </head>
+    <body class="bg-slate-300 flex flex-col min-h-screen">
+        {% include "./partials/admin-header.html" %}
+        <div class="container my-6 mx-auto">
+           
+            {{ content | safe }}
+        </div>
+    </body>
+</html>

@@ -11,6 +11,8 @@ module.exports = {
   theme: {
     fontFamily:{ 
       'Poppins': ['Poppins', 'sans-serif'],
+      'admin-display': ['Bebas Neue', 'cursive'],
+      'admin-body' : ['"Oswald"', 'sans-serif'],
     },
     container: {
       center: true,

@@ -1,11 +1,12 @@
 {
-  "scripts": {
+  "type" : "commonjs",
+    "scripts": {
     "start": "npm-run-all --parallel css eleventy browsersync",
     "eleventy": "eleventy --watch",
     "debug": "set DEBUG=* & eleventy",
     "css": "postcss src/static/css/tailwind.css --o _site/static/css/style.css --watch",
     "build": "cross-env NODE_ENV=production eleventy && cross-env NODE_ENV=production postcss src/static/css/tailwind.css --o _site/static/css/style.css",
-    "browsersync": "browser-sync start --server '_site' --files '_site' --port 8080 --no-notify --no-open"
+    "browsersync": "browser-sync start --server \"_site\" --files \"_site\" --port 8080 --no-notify --no-open"
   },
   "devDependencies": {
     "@11ty/eleventy": "^1.0.0",
@@ -22,12 +23,14 @@
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.6",
     "postcss-cli": "^9.1.0",
+    "postcss-nesting": "^10.2.0",
     "prismjs": "^1.26.0",
     "tailwindcss": "^3.0.18"
   },
   "dependencies": {
     "browsersync": "^0.0.1-security",
     "daisyui": "^1.25.4",
+    "firebase": "^9.14.0",
     "postcss": "^8.3.6",
     "tailwind": "^4.0.0"
   }
