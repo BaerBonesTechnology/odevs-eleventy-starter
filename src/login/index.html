@@ -1,20 +1,21 @@
 ---
-layout: login
+layout: admin-portal/login
 ---
 <div class="container login-box items-center text-center w-1/4">
     <strong class="font-admin-display text-5xl tracking-wide"> {{ title }} </strong>
     <div class="flex flex-col">
+        <p id="error-text" class="text-red-600"></p>
         <div class="login-form-group mt-3 mb-3">
             <input class="login-form-field text-black" type="text" placeholder="test@test.com" id="email" name="email"/>
             <span>E-Mail</span>
         </div>
         <div class="login-form-group mt-3 mb-1">
-            <input type="password" name="password" id="password" placeholder="Password" class="login-form-field text-black"/>
+            <input type="password" name="password" id="password" placeholder="Password" class="login-form-field text-black" autocomplete="current-password"/>
             <span>Password</label>
         </div>
         <small class="text-right mb-3" >
             <a href="/forgot-password" class="text-blue-500">Forgot Password?</a>
         </small>
         <button class="btn btn-primary rounded-xl" id="login-button">Log In</button>
-    </form>
+    </div>
 </div>

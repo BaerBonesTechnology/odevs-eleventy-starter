@@ -16,6 +16,7 @@
     {% endif %}
   </head>
   <body class="bg-base-300 flex flex-col min-h-screen">
+    <script>var exports = {};</script>
     {% include "./partials/navbar.html" %}
     <div class="container my-6 mx-auto">
       {{ content | safe }}
@@ -29,5 +30,6 @@
       <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     {% endif %}
 
+    <script type="module" src="/static/js/main.js"></script>
   </body>
 </html>

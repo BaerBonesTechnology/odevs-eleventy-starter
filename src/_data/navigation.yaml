@@ -9,6 +9,4 @@ items:
   - text: Blog
     url: "/blog"
   - text: Join Our Slack
-    url: "/slack"  
-  - text: Sign in
-    url: "/login"
+    url: "/slack"

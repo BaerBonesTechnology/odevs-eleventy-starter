@@ -119,3 +119,10 @@ body pre[class*="language-"] {
   }
 }
 }
+
+
+.rounded-image{
+  @apply rounded-full;
+  height: 125px;
+  width: 125px;
+}

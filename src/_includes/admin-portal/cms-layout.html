@@ -4,8 +4,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-             <script type="module" src="\static\js\index.js"></script>
-
     <style>
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200;300;400;500;600;700&display=swap');</style> 
     <meta charset="UTF-8">
@@ -24,10 +22,12 @@
         {% endif %}
     </head>
     <body class="bg-slate-300 flex flex-col min-h-screen">
-        {% include "./partials/admin-header.html" %}
+        <script>var exports = {};</script>
+        {% include "../partials/admin-header.html" %}
         <div class="container my-6 mx-auto">
            
             {{ content | safe }}
         </div>
+        <script type="text/x-typescript" src="/static/js/admin/main-admin.js"></script>
     </body>
 </html>

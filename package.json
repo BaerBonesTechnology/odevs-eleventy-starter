@@ -1,6 +1,8 @@
 {
-  "type" : "commonjs",
-    "scripts": {
+  "compilerOptions": {
+    "target": "es6"
+  },
+  "scripts": {
     "start": "npm-run-all --parallel css eleventy browsersync",
     "eleventy": "eleventy --watch",
     "debug": "set DEBUG=* & eleventy",
@@ -30,7 +32,7 @@
   "dependencies": {
     "browsersync": "^0.0.1-security",
     "daisyui": "^1.25.4",
-    "firebase": "^9.14.0",
+    "firebase": "^9.13.0",
     "postcss": "^8.3.6",
     "tailwind": "^4.0.0"
   }

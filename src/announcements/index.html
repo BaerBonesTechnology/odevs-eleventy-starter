@@ -9,7 +9,7 @@
          {% set jobslist = collections.job %}
 
          {% for job in jobslist %}
-         <a href="{{ job.url | url }}" class="inline-flex">
+         <a href="{{ job.url | url }}">
       <div class="transition duration-500 flex flex-col border rounded-md p-4 my-4 shadow-sm transform hover:-translate-x-1 hover:shadow-xl">
        <img src="{{job.data.logo}}" class="w-16">
        <strong>

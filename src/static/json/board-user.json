@@ -1,0 +1,23 @@
+{
+   "role":"test-user",
+   "drafts":[
+            {
+                "author":"test draft post",
+                "comments": true,
+                "content":"test draft post content",
+                  "date":"2019-01-01T00:00:00.000Z",
+                  "description":"test draft post description",
+                  "tags":[
+                      "test",
+                      "draft",
+                      "post"
+                  ],
+                  "title":"test draft post title"
+                }
+            ],
+   "uid":"",
+   "name":"",
+   "email":"",
+   "profile_photo":"",
+   "bio":""
+}
