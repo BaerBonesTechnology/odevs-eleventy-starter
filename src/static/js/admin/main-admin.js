@@ -21,9 +21,6 @@ const app = initializeApp(firebaseConfig);
 //initialize firebase analytics
 const analytics = getAnalytics(app);
 
-var isSignedIn = false;
-var boardUser;
-
 //initialize firebase auth
 var auth = getAuth(app);
 
@@ -82,11 +79,11 @@ if(dailyGreeting !== null){
     const date = new Date();
     const hour = date.getHours();
     if(hour < 12){
-        dailyGreeting.innerHTML = "Good Morning" + " " + boardUser.name;
+        dailyGreeting.innerHTML = "Good Morning" + " " + authManager.boardUser.name;
     }else if(hour < 18){
-        dailyGreeting.innerHTML = "Good Afternoon" + " " + boardUser.name;;
+        dailyGreeting.innerHTML = "Good Afternoon" + " " + authManager.boardUser.name;;
     }else{
-        dailyGreeting.innerHTML = "Good Evening" + " " + boardUser.name;;
+        dailyGreeting.innerHTML = "Good Evening" + " " + authManager.boardUser.name;;
     }
 };
 };

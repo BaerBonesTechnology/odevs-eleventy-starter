@@ -36,6 +36,7 @@ export class BoardUser{
         }
     };
 
+    //will need when adding new user through account creation page
     async addBoardUser(email: string, name: string, profile_photo: string, bio: string, role: string, uid: string, db: Firestore){
         try {
             const docRef = await addDoc(collection(db, "users-board", this.uid), {
