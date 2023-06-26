@@ -34,6 +34,7 @@
     "daisyui": "^1.25.4",
     "firebase": "^9.13.0",
     "postcss": "^8.3.6",
-    "tailwind": "^4.0.0"
+    "prettier": "^2.8.8",
+    "typescript": "^5.1.3"
   }
 }

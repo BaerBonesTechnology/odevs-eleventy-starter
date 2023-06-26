@@ -6,7 +6,7 @@ import { getAuth } from 'https://www.gstatic.com/firebasejs/9.15.0/firebase-auth
 ;
 import {getFirestore} from 'https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js'
 ;
-import {AuthenticationManager} from "/static/js/utility/authenticationmanager.ts";
+import {AuthenticationManager} from "/static/js/utility/authenticationmanager.js";
 
 
 const firebaseConfig = {
